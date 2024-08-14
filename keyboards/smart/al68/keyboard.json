@@ -2,6 +2,9 @@
     "manufacturer": "YUNZII Keyboard",
     "keyboard_name": "AL68",
     "maintainer": "Jeff",
+    "bluetooth": {
+        "driver": "custom"
+    },
     "bootloader": "stm32duino",
     "diode_direction": "ROW2COL",
     "encoder": {
@@ -10,6 +13,7 @@
         ]
     },
     "features": {
+        "bluetooth": true,
         "bootmagic": true,
         "console": true,
         "encoder": true,

@@ -15,8 +15,6 @@
 // //  */
 
 #include "quantum.h"
-#include "uart.h"
-#include "common/smart_ble.h"
 #include "al68.h"
 
 
@@ -25,23 +23,21 @@ void keyboard_pre_init_kb(void) {
     AFIO->MAPR|= AFIO_MAPR_SWJ_CFG_DISABLE; //diable JTAG (GD32 different to STM32)
     setPinOutput(A8);
     writePinHigh(A8);  //ENABLE USB
-    uart_init(460800);
-    wait_ms(400);
 }
 
 bool process_record_kb(uint16_t keycode, keyrecord_t* record) 
 {
     if (record->event.pressed){
-        if ((keycode>=KC_BLE1) && (keycode<=KC_24G))
-        {
-            WIRELESS_START(keycode-KC_USB);
-            return false;     
-        }
-        else if (keycode == KC_USB)
-        {
-            WIRELESS_STOP();
-            return false;
-        }
+        // if ((keycode>=KC_BLE1) && (keycode<=KC_24G))
+        // {
+        //     WIRELESS_START(keycode-KC_USB);
+        //     return false;     
+        // }
+        // else if (keycode == KC_USB)
+        // {
+        //     WIRELESS_STOP();
+        //     return false;
+        // }
     }
     return process_record_user(keycode, record);   
 }
