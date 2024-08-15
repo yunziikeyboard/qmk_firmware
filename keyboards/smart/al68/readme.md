@@ -4,7 +4,7 @@
 ![AL68](https://i.imgur.com/mhiYDh3.png)
 * Keyboard Maintainer: [Jeff](https://github.com/yunziikeyboard)
 * Hardware Supported: [yunzii](https://www.yunzii.com)
-* Hardware Availability: [yunzii](https://www.yunzii.com)
+* Hardware Availability: [yunzii](https://www.yunzii.com) 
 
 Make example for this keyboard (after setting up your build environment):
 

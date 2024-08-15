@@ -15,7 +15,6 @@
 // //  */
 
 #include "quantum.h"
-#include "al68.h"
 
 
 void keyboard_pre_init_kb(void) {
